@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 9ButtonTester </title>
+        <title> 10ButtonTester </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -9,19 +9,7 @@
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     </head>
 
-  <script>
-    window.onload = function () {
-      document
-        .querySelector(".say-hi-button")
-        .addEventListener("click", function () {
-          // here you can change also a-scene or a-entity properties, like
-          // changing your 3D model source, size, position and so on
-          // or you can just open links, trigger actions...
-          alert("Hi there!");
-          window.open("https://studycore.de/");
-        });
-    };
-  </script>
+
   
     <script>
         function geek() {           
@@ -34,8 +22,14 @@
         </script>
     
      <script>
-        function Quiz() {           
+        function Quiz1() {           
             window.open("https://studycore.de/");
+        }
+        </script>
+    
+    <script>
+        function Quiz2() {           
+            window.open("https://google.de/");
         }
         </script>
     
@@ -66,8 +60,7 @@
     <body style="margin: 0; overflow: hidden;">
         
         <div class="buttons">
-      <button class="say-hi-button">SAY HI!</button>
-     <button class="Test" type = "button" id = "btn" onclick = "Quiz()"> Try it </button>
+     <button class="Test" type = "button" id = "btn" onclick = "Quiz1()"> LinkButton </button>
     </div>
         
         <a-scene
