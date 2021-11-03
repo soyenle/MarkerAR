@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 2ButtonTester </title>
+        <title> 3ButtonTester </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -20,7 +20,7 @@ AFRAME.registerComponent('cursor-listener', {
 
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Click me bitch";
+            doc.textContent = "Quiz1";
             document.getElementById("btn").onclick = Quiz1;
         
     });
@@ -28,6 +28,24 @@ AFRAME.registerComponent('cursor-listener', {
 });
 </script>
   
+    
+     <script>
+// Component to make a popup window for the quiz.
+AFRAME.registerComponent('button-listener', {
+  init: function () {
+
+    this.el.addEventListener('mouseenter', function (evt) {
+
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Quiz2";
+            document.getElementById("btn").onclick = Quiz2;
+        
+    });
+  }
+});
+</script>
+    
     <script>
         function geek() {           
             // Accessing the button element
