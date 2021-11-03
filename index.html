@@ -96,6 +96,7 @@ AFRAME.registerComponent('cursor-listener', {
                     src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
+            
             <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -118,6 +119,29 @@ AFRAME.registerComponent('cursor-listener', {
                     cursor-listener
                 ></a-entity>
                    
+            </a-marker>
+            
+            <!--- New Marker/Model --->             
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-A.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.4 0.4 0.4"
+                    animation-mixer="loop: repeat"
+                    gltf-model="assets/magnemite/magnemite/scene.gltf"
+                    class="clickable"
+                    gesture-handler
+                    
+                ></a-entity>
+                              
             </a-marker>
 
             <a-entity camera><a-cursor></a-cursor></a-entity>
