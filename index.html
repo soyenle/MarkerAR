@@ -1,16 +1,15 @@
 <!doctype html>
 <html>
     <head>
-        <title> MarkerButton1 </title>
+        <title> MarkerButton </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     </head>
+    
 
-    
-    
  <script>
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
@@ -23,7 +22,7 @@ AFRAME.registerComponent('listener1', {
     });
   }
 });
-     
+
      AFRAME.registerComponent('listener2', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
@@ -32,68 +31,37 @@ AFRAME.registerComponent('listener1', {
             doc.textContent = "Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
-     
+
       AFRAME.registerComponent('listener3', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz3";
+            doc.textContent = "Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
-     
+
       AFRAME.registerComponent('listener4', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz4";
+            doc.textContent = "Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
-     
-      AFRAME.registerComponent('listener5', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz5";
-            document.getElementById("btn").onclick = Quiz2;      
-    }); }});
-     
-      AFRAME.registerComponent('listener6', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz6";
-            document.getElementById("btn").onclick = Quiz2;      
-    }); }});
-     
+
 </script>
-  
-    
-    
-    
-    
+
+
+
+
+
      <script>
         function Quiz1() {           
             window.open("https://studycore.de/");
         }
          function Quiz2() {           
             window.open("https://google.de/");
-         }
-          function Quiz3() {           
-            window.open("https://youtube.de/");
-         }
-          function Quiz4() {           
-            window.open("https://bing.de/");
-         }
-          function Quiz5() {           
-            window.open("https://yahoo.de/");
-         }
-          function Quiz6() {           
-            window.open("https://xing.de/");
-         }
         </script>
   
     
@@ -109,7 +77,6 @@ AFRAME.registerComponent('listener1', {
       align-items: center;
       z-index: 10;
     }
-
     .say-hi-button {
       padding: 0.25em;
       border-radius: 4px;
@@ -120,7 +87,6 @@ AFRAME.registerComponent('listener1', {
       height: 2em;
     }
   </style>  
-
     <body style="margin: 0; overflow: hidden;">
         
         <div class="buttons">
@@ -162,12 +128,13 @@ AFRAME.registerComponent('listener1', {
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
+                    cursor-listener
                     listener1
                 ></a-entity>
-                   
+
             </a-marker>
             
- <!--- New Marker/Model --->             
+            <!--- New Marker/Model --->             
             <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -185,100 +152,12 @@ AFRAME.registerComponent('listener1', {
                     gltf-model="assets/magnemite/magnemite/scene.gltf"
                     class="clickable"
                     gesture-handler
+                    button-listener
                     listener2
                 ></a-entity>
-                              
-            </a-marker>
-            
-<!--- New Marker/Model --->             
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-B.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.015 0.015 0.015"
-                    animation-mixer="loop: repeat"
-                    gltf-model="assets/mewtwo/scene.gltf"
-                    class="clickable"
-                    gesture-handler
-                    listener3
-                ></a-entity>
-                
-                <!--- New Marker/Model --->             
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-C.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.2 0.2 0.2"
-                    animation-mixer="loop: repeat"
-                    gltf-model="assets/pokemon_arena/scene.gltf"
-                    class="clickable"
-                    gesture-handler
-                    listener4
-                ></a-entity>
-                
-                   
-                <!--- New Marker/Model --->             
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-D.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.4 0.4 0.4"
-                    animation-mixer="loop: repeat"
-                    gltf-model="assets/pokemon_center/scene.gltf"
-                    class="clickable"
-                    gesture-handler
-                    listener5
-                ></a-entity>
-                
-                  <!--- New Marker/Model --->             
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/pattern-E.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.01 0.01 0.01"
-                    animation-mixer="loop: repeat"
-                    gltf-model="assets/shenron_dragon_ball/scene.gltf"
-                    class="clickable"
-                    gesture-handler
-                    listener6
-                ></a-entity>
-                              
-            </a-marker>
 
+            </a-marker>
             <a-entity camera><a-cursor></a-cursor></a-entity>
-
         </a-scene>
         
         
