@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> MarkerButton1 </title>
+        <title> MarkerButton2 </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -46,8 +46,8 @@ AFRAME.registerComponent('listener1', {
     this.el.addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Quiz2";
-            document.getElementById("btn").onclick = Quiz2;      
+            doc.textContent = "Quiz4";
+            document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
 </script>
@@ -65,6 +65,9 @@ AFRAME.registerComponent('listener1', {
          }
          function Quiz3() {           
             window.open("https://bing.de/");
+         }
+         function Quiz3() {           
+            window.open("https://yahoo.de/");
          }
         </script>
   
@@ -185,6 +188,31 @@ AFRAME.registerComponent('listener1', {
                 ></a-entity>
 
             </a-marker>
+            
+               <!--- New Marker/Model --->             
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-C.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-entity
+                    id="bowser-model"
+                    scale="0.4 0.4 0.4"
+                    animation-mixer="loop: repeat"
+                    gltf-model="assets/pokemon_arena/scene.gltf"
+                    class="clickable"
+                    gesture-handler
+                    button-listener
+                    listener4
+                ></a-entity>
+
+            </a-marker>
+            
             
             <a-entity camera><a-cursor></a-cursor></a-entity>
         </a-scene>
