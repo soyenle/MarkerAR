@@ -44,7 +44,16 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
- 
+    AFRAME.registerComponent('bugfix', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+            document.getElementById("btn").textContent = "Instructions";
+            document.getElementById("btn").onclick = Quiz0;      
+    }); }});
+
+         function Quiz0() {           
+            window.alert("Berühre mit dem mittleren Kreis ein 3D-Modell \n Danach lässt sich ein");
+        }
         function Quiz1() {           
             window.open("https://studycore.de/");
         }
