@@ -3,9 +3,7 @@
 AFRAME.registerComponent('listener1', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz1";
+            document.getElementById("btn").textContent = "Öffne Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
     });
   }
@@ -14,27 +12,21 @@ AFRAME.registerComponent('listener1', {
      AFRAME.registerComponent('listener2', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz2";
+            document.getElementById("btn").textContent = "Öffne Quiz2";
             document.getElementById("btn").onclick = Quiz2;      
     }); }});
 
       AFRAME.registerComponent('listener3', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz3";
+            document.getElementById("btn").textContent = "Öffne Quiz3";
             document.getElementById("btn").onclick = Quiz3;      
     }); }});
 
       AFRAME.registerComponent('listener4', {
   init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Quiz4";
+            document.getElementById("btn").textContent = "Öffne Quiz4";
             document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
