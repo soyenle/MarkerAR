@@ -30,6 +30,20 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz4;      
     }); }});
 
+  AFRAME.registerComponent('listener5', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+            document.getElementById("btn").textContent = "Öffne Quiz5";
+            document.getElementById("btn").onclick = Quiz5;      
+    }); }});
+
+      AFRAME.registerComponent('listener6', {
+  init: function () {
+    this.el.addEventListener('mouseenter', function (evt) {
+            document.getElementById("btn").textContent = "Öffne Quiz6";
+            document.getElementById("btn").onclick = Quiz6;      
+    }); }});
+
  
         function Quiz1() {           
             window.open("https://studycore.de/");
@@ -41,6 +55,12 @@ AFRAME.registerComponent('listener1', {
             window.open("https://bing.de/");
          }
          function Quiz4() {           
+            window.open("https://yahoo.de/");
+         }
+         function Quiz5() {           
+            window.open("https://bing.de/");
+         }
+         function Quiz6() {           
             window.open("https://yahoo.de/");
          }
       
