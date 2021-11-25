@@ -1,5 +1,6 @@
 
     .buttons {
+      border-radius: 15px;
       position: absolute;
       bottom: 0;
       left: 0;
