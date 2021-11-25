@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 7MarkerAR </title>
+        <title> 8MarkerAR </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -96,7 +96,7 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.2 0.2 0.2"
+                    scale="0.05 0.05 0.05"
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_center/scene.gltf"
                     class="clickable"
@@ -118,12 +118,12 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.2 0.2 0.2"
+                    scale="0.05 0.05 0.05"
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     class="clickable"
                     gesture-handler         
-                    listener3
+                    listener4
                 ></a-entity>
 
             </a-marker>
@@ -141,12 +141,12 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.05 0.05 0.05"
+                    scale="0.005 0.005 0.005"
                     animation-mixer="loop: repeat"
                     gltf-model="assets/mewtwo/scene.gltf"
                     class="clickable"
                     gesture-handler         
-                    listener3
+                    listener5
                 ></a-entity>
 
             </a-marker>
@@ -155,7 +155,7 @@
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/QR_MarkerAR.patt"
+                url="assets/pattern-E.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -168,7 +168,7 @@
                     gltf-model="assets/ash_ketchum/scene.gltf"
                     class="clickable"
                     gesture-handler         
-                    listener3
+                    listener6
                 ></a-entity>
 
             </a-marker>
