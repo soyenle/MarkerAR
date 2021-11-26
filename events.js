@@ -1,4 +1,26 @@
 
+        function Quiz0() {           
+            window.alert("Berühre mit dem mittleren Kreis ein 3D-Modell \n Danach lässt sich ein Quizfenster öffnen");
+        }
+        function Quiz1() {           
+            window.open("https://studycore.de/");
+        }
+         function Quiz2() {           
+            window.open("https://google.de/");
+         }
+         function Quiz3() {           
+            window.open("https://bing.de/");
+         }
+         function Quiz4() {           
+            window.open("https://yahoo.de/");
+         }
+         function Quiz5() {           
+            window.open("https://bing.de/");
+         }
+         function Quiz6() {           
+            window.open("https://yahoo.de/");
+         }
+
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
   init: function () {
@@ -44,32 +66,11 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
-    AFRAME.registerComponent('bugfix', {
+    
   init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
             document.getElementById("btn").textContent = "Instructions";
             document.getElementById("btn").onclick = Quiz0;      
-    }); }});
+    };
 
-         function Quiz0() {           
-            window.alert("Berühre mit dem mittleren Kreis ein 3D-Modell \n Danach lässt sich ein Quizfenster öffnen");
-        }
-        function Quiz1() {           
-            window.open("https://studycore.de/");
-        }
-         function Quiz2() {           
-            window.open("https://google.de/");
-         }
-         function Quiz3() {           
-            window.open("https://bing.de/");
-         }
-         function Quiz4() {           
-            window.open("https://yahoo.de/");
-         }
-         function Quiz5() {           
-            window.open("https://bing.de/");
-         }
-         function Quiz6() {           
-            window.open("https://yahoo.de/");
-         }
+         
       
