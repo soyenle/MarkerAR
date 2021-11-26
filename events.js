@@ -1,6 +1,6 @@
 
         function Quiz0() {           
-            window.alert("Berühre mit dem mittleren Kreis ein 3D-Modell \n Danach lässt sich ein Quizfenster öffnen");
+            window.alert("Richte die Kamera auf einen Marker bis ein Modell erscheint \n Berühre mit dem mittleren Kreis ein Modell \n Danach lässt sich ein Quizfenster öffnen \n Rotation und Skalierung der Modelle anhand Tocuh Bwegung möglich" );
         }
         function Quiz1() {           
             window.open("https://studycore.de/");
