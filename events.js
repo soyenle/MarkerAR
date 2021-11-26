@@ -66,11 +66,13 @@ AFRAME.registerComponent('listener1', {
             document.getElementById("btn").onclick = Quiz6;      
     }); }});
 
-    
+    AFRAME.registerComponent('bugfix', {
   init: function () {
-            document.getElementById("btn").textContent = "Instructions";
-            document.getElementById("btn").onclick = Quiz0;      
-    };
+    this.el.addEventListener('mouseenter', function (evt) {
+           document.getElementById("btn").textContent = "Instructions";
+            document.getElementById("btn").onclick = Quiz0;        
+    }); }});
+
 
          
       
