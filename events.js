@@ -1,6 +1,6 @@
 
         function Quiz0() {           
-            window.alert("Richte die Kamera auf einen Marker bis ein Modell erscheint \n Berühre mit dem mittleren Kreis ein Modell \n Danach lässt sich ein Quizfenster öffnen \n Rotation und Skalierung der Modelle anhand Tocuh Bwegung möglich" );
+            window.alert("! Richte die Kamera auf einen Marker bis ein Modell erscheint \nBerühre mit dem mittleren Kreis ein Modell \nDanach lässt sich ein Quizfenster öffnen \nRotation und Skalierung der Modelle anhand Tocuh Bwegung möglich" );
         }
         function Quiz1() {           
             window.open("https://studycore.de/");
