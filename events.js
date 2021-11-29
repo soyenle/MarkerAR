@@ -23,13 +23,11 @@
 
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
- 
+ init: function () {
     this.el.addEventListener('mouseenter', function (evt) {
             document.getElementById("btn").textContent = "Öffne Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
-    });
-  
-});
+    }); } });
 
      AFRAME.registerComponent('listener2', {
   init: function () {
