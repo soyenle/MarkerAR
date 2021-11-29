@@ -72,7 +72,5 @@ AFRAME.registerComponent('listener1', {
     }); }});
 
 
-   
-document.getElementById("btn").textContent = "Test";
-document.getElementById("btn").onclick = Quiz5; 
+  
       
