@@ -1,7 +1,7 @@
 
     .buttons {
       position: absolute;
-      bottom: 0;
+      bottom: 10%;
       left: 0;
       width: 25%;
       height: 5em;
@@ -13,8 +13,8 @@
     
     .help {
       position: absolute;
-      bottom: 10%;
-      left: 5%;
+      bottom: 2.5%;
+      left: 0%;
       width: 25%;
       height: 5em;
       display: flex;
