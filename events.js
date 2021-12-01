@@ -4,47 +4,41 @@ AFRAME.registerComponent('listener1', {
     document.getElementById("bowser-model1").addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
-            doc.textContent = "Öffne Quiz1111";
+            doc.textContent = "Öffne Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
+    });
+    
+    document.getElementById("bowser-model2").addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Öffne Quiz2";
+            document.getElementById("btn").onclick = Quiz2;    
+    });
+    
+    document.getElementById("bowser-model3").addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Öffne Quiz3";
+            document.getElementById("btn").onclick = Quiz3;    
+    });
+    
+    document.getElementById("bowser-model4").addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Öffne Quiz4";
+            document.getElementById("btn").onclick = Quiz4;    
+    });
+    
+    document.getElementById("bowser-model5").addEventListener('mouseenter', function (evt) {
+        var doc = document.getElementById("btn");             
+            // Changing the text content
+            doc.textContent = "Öffne Quiz5";
+            document.getElementById("btn").onclick = Quiz5;    
     });
   }
 });
 
-     AFRAME.registerComponent('listener2', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz2";
-            document.getElementById("btn").onclick = Quiz2;      
-    }); }});
 
-      AFRAME.registerComponent('listener3', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz3";
-            document.getElementById("btn").onclick = Quiz3;      
-    }); }});
-
-      AFRAME.registerComponent('listener4', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz4";
-            document.getElementById("btn").onclick = Quiz4;      
-    }); }});
-
-   AFRAME.registerComponent('listener5', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz5";
-            document.getElementById("btn").onclick = Quiz5;      
-    }); }});
 
    AFRAME.registerComponent('listener6', {
   init: function () {
