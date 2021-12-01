@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 11MarkerAR </title>
+        <title> 12MarkerAR </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
         
@@ -32,8 +32,7 @@
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
-            gesture-detector
-            gesture-handler
+            gesture-detector  
                  listener1
         >
             <a-assets>
@@ -63,7 +62,7 @@
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
                     gltf-model="#animated-asset"
                     class="clickable"
-                                   
+                    gesture-handler               
                     listener1
                 ></a-entity>
 
@@ -85,7 +84,7 @@
                     scale="0.4 0.4 0.4"
                     gltf-model="assets/magnemite/magnemite/scene.gltf"
                     class="clickable"
-                               
+                    gesture-handler           
                     listener2
                 ></a-entity>
 
@@ -107,7 +106,7 @@
                     scale="0.05 0.05 0.05"
                     gltf-model="assets/pokemon_center/scene.gltf"
                     class="clickable"
-                             
+                    gesture-handler         
                     listener3
                 ></a-entity>
             </a-marker>
@@ -128,7 +127,7 @@
                     scale="0.05 0.05 0.05"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     class="clickable"
-                            
+                    gesture-handler        
                     listener4
                 ></a-entity>
 
@@ -150,7 +149,7 @@
                     scale="0.005 0.005 0.005"
                     gltf-model="assets/mewtwo/scene.gltf"
                     class="clickable"
-                            
+                    gesture-handler        
                     listener5
                 ></a-entity>
 
@@ -171,7 +170,7 @@
                     scale="0.3 0.3 0.3"
                     gltf-model="assets/ash_ketchum/scene.gltf"
                     class="clickable"
-                             
+                    gesture-handler         
                     listener6
                 ></a-entity>
 
