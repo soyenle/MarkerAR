@@ -1,7 +1,7 @@
 // Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
   mouseenter: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
+    document.getElementById("bowser-model1").addEventListener('mouseenter', function (evt) {
         var doc = document.getElementById("btn");             
             // Changing the text content
             doc.textContent = "Öffne Quiz1111";
