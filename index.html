@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> 10MarkerAR </title>
+        <title> 11MarkerAR </title>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
         
@@ -33,6 +33,7 @@
             id="scene"
             embedded
             gesture-detector
+            gesture-handler
                  listener1
         >
             <a-assets>
@@ -53,7 +54,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker1"
             >
 
 
@@ -62,7 +63,7 @@
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
                     gltf-model="#animated-asset"
                     class="clickable"
-                    gesture-handler                
+                                   
                     listener1
                 ></a-entity>
 
@@ -77,14 +78,14 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker2"
             >
                 <a-entity
                     id="bowser-model2"
                     scale="0.4 0.4 0.4"
                     gltf-model="assets/magnemite/magnemite/scene.gltf"
                     class="clickable"
-                    gesture-handler           
+                               
                     listener2
                 ></a-entity>
 
@@ -99,14 +100,14 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker3"
             >
                 <a-entity
                     id="bowser-model3"
                     scale="0.05 0.05 0.05"
                     gltf-model="assets/pokemon_center/scene.gltf"
                     class="clickable"
-                    gesture-handler         
+                             
                     listener3
                 ></a-entity>
             </a-marker>
@@ -120,14 +121,14 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker4"
             >
                 <a-entity
                     id="bowser-model4"
                     scale="0.05 0.05 0.05"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     class="clickable"
-                    gesture-handler         
+                            
                     listener4
                 ></a-entity>
 
@@ -142,14 +143,14 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker5"
             >
                 <a-entity
                     id="bowser-model5"
                     scale="0.005 0.005 0.005"
                     gltf-model="assets/mewtwo/scene.gltf"
                     class="clickable"
-                    gesture-handler         
+                            
                     listener5
                 ></a-entity>
 
@@ -163,14 +164,14 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker6"
             >
                 <a-entity
                     id="bowser-model6"
                     scale="0.3 0.3 0.3"
                     gltf-model="assets/ash_ketchum/scene.gltf"
                     class="clickable"
-                    gesture-handler         
+                             
                     listener6
                 ></a-entity>
 
