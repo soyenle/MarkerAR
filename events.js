@@ -1,4 +1,4 @@
-// Component to make a popup window for the quiz.
+/*  Component to make a popup window for the quiz.
 AFRAME.registerComponent('listener1', {
   init: function () {
     document.getElementById("bowser-model1").addEventListener('mouseenter', function (evt) {
@@ -7,71 +7,31 @@ AFRAME.registerComponent('listener1', {
             doc.textContent = "Öffne Quiz1";
             document.getElementById("btn").onclick = Quiz1;    
     });
+*/
+
+AFRAME.registerComponent('markerhandler1', {
+         tick:function() {
+         if(document.querySelector("a-marker").object3D.visible == true) {
+             
+         document.getElementById("btn").textContent = "Apfel Bein Stein Stuhl Gold Auto Prüfung DNA Flasche Türkei Fenster"; 
+         } else {
+         document.getElementById("btn").textContent = ""; 
+      }
+   }
+});
     
-    document.getElementById("bowser-model2").addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz2";
-            document.getElementById("btn").onclick = Quiz2;    
-    });
-    
-    document.getElementById("bowser-model3").addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz3";
-            document.getElementById("btn").onclick = Quiz3;    
-    });
-    
-    document.getElementById("bowser-model4").addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz4";
-            document.getElementById("btn").onclick = Quiz4;    
-    });
-    
-    document.getElementById("bowser-model5").addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz5";
-            document.getElementById("btn").onclick = Quiz5;    
-    });
-  }
+AFRAME.registerComponent('markerhandler2', {
+         tick:function() {
+         if(document.querySelector("a-marker").object3D.visible == true) {
+             
+         document.getElementById("btn").textContent = "ABCDEFG"; 
+         } else {
+         document.getElementById("btn").textContent = ""; 
+      }
+   }
 });
 
-
-
-   AFRAME.registerComponent('listener6', {
-  init: function () {
-    this.el.addEventListener('mouseenter', function (evt) {
-        var doc = document.getElementById("btn");             
-            // Changing the text content
-            doc.textContent = "Öffne Quiz6";
-            document.getElementById("btn").onclick = Quiz6;      
-    }); }});
-
-
-        function Quiz0() {           
-            window.alert("Richte die Kamera auf einen Marker bis ein Modell erscheint \nBerühre mit dem mittleren Kreis ein Modell \nDanach lässt sich ein Quizfenster öffnen \nRotation und Skalierung der Modelle anhand Touch Bewegung möglich" );
-        }
-        function Quiz1() {           
-            window.open("https://studycore.de/");
-        }
-         function Quiz2() {           
-            window.open("https://google.de/");
-         }
-         function Quiz3() {           
-            window.open("https://bing.de/");
-         }
-         function Quiz4() {           
-            window.open("https://yahoo.de/");
-         }
-         function Quiz5() {           
-            window.open("https://bing.de/");
-         }
-         function Quiz6() {           
-            window.open("https://yahoo.de/");
-         }
-
+       
  
 
 
